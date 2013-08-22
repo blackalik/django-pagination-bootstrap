@@ -2,7 +2,6 @@
 {% load i18n %}
 
 <ul class="pagination">
-  <ul>
   {% if page_obj.has_previous %}
     <li><a href="?page={{ page_obj.previous_page_number }}{{ getvars }}{{ hashtag }}">&laquo;</a></li>
   {% else %}
@@ -24,6 +23,5 @@
   {% else %}
     <li class="disabled"><a href="#" onclick="javascript: return false;">&raquo;</a></li>
   {% endif %}
-  </ul>
 </div>
 {% endif %}
